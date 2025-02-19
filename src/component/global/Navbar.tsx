@@ -1,19 +1,22 @@
+import Image from "next/image";
 
-
-type Props = {}
+type Props = {};
 
 const Navbar = async (props: Props) => {
   return (
-    <header
-    className="fixed right-0 left-0 top-0 py-4 px-4 bg-black/40 backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900 justify-between"
-    >
-      <aside>
-    
+    <header className="">
+      <aside className="">
+        <p className="text-red-900 text-2xl">Fu</p>
+        <Image
+          src="/fuzzieLogo (1).png"
+          alt="Fuzzie Logo"
+          width={15}
+          height={15}
+        />
+        <p className="">zie</p>
       </aside>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
-
-
+export default Navbar;
